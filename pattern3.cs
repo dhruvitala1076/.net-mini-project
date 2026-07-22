@@ -8,12 +8,17 @@ namespace PROJECT_01P
             for (int i = 1; i <= 5; i++)
             {
                 for (int j = 5; j > i; j--)
+                {
                     Console.Write(" ");
+                }
+                    for (int k = 1; k <= i; k++)
+                    {
 
-                for (int k = 1; k <= i; k++)
-                    Console.Write("* ");
+                        Console.Write("* ");
+                    }
+                    Console.WriteLine();
+                
             }
-            Console.WriteLine();
         }
     }
 }
