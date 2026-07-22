@@ -1,17 +1,20 @@
-﻿using System;
+using System;
 
-class pattern
+
+namespace PROJECT_01P
 {
-    static void Main()
+    internal class pattern
     {
-        for (int i = 1; i <= 5; i++)
+        public static void pat1()
         {
-            for (int j = 1; j <= i; j++)
-                Console.Write("*");
-
-            Console.WriteLine();
+            for (int i = 1; i <= 5; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
         }
-
-        Console.ReadLine();
     }
 }
