@@ -1,20 +1,19 @@
-﻿using System;
-
-class Pattern3
+using System;
+namespace PROJECT_01P
 {
-    static void Main()
+    class Pattern3
     {
-        for (int i = 1; i <= 5; i++)
+        public static void par4()
         {
-            for (int j = 5; j > i; j--)
-                Console.Write(" ");
+            for (int i = 1; i <= 5; i++)
+            {
+                for (int j = 5; j > i; j--)
+                    Console.Write(" ");
 
-            for (int k = 1; k <= i; k++)
-                Console.Write("* ");
-
+                for (int k = 1; k <= i; k++)
+                    Console.Write("* ");
+            }
             Console.WriteLine();
         }
-
-        Console.ReadLine();
     }
 }
