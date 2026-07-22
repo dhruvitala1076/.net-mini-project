@@ -1,25 +1,25 @@
-﻿using System;
-
-class Pattern4
+using System;
+namespace PROJECT_01P
 {
-    static void Main()
+    class Pattern4
     {
-        int num = 1;
-
-        for (int i = 1; i <= 5; i++)
+        public static void par5()
         {
-            for (int j = 5; j > i; j--)
-                Console.Write(" ");
+            int num = 1;
 
-            for (int k = 1; k <= i; k++)
+            for (int i = 1; i <= 5; i++)
             {
-                Console.Write(num + " ");
-                num++;
+                for (int j = 5; j > i; j--)
+                    Console.Write(" ");
+
+                for (int k = 1; k <= i; k++)
+                {
+                    Console.Write(num + " ");
+                    num++;
+                }
+                Console.WriteLine();
             }
 
-            Console.WriteLine();
         }
-
-        Console.ReadLine();
     }
 }
